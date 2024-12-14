@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    background-color:green;
 }
 
 #bg-video {
@@ -20,6 +21,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: lightgreen;
     background: rgba(0, 0, 0, 0.5);
 }
 
