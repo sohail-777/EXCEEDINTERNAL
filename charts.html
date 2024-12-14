@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom Analysis Charts</title>
+  <link rel="stylesheet" href="charts.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Symptom Analysis</h1>
+    <p>Bar Graph and Pie Chart based on logged symptoms</p>
+  </header>
+
+  <main>
+    <section id="bar-chart-section">
+      <h2>Bar Graph: Good vs Bad Health Days</h2>
+      <canvas id="barChart"></canvas>
+    </section>
+
+    <section id="pie-chart-section">
+      <h2>Pie Chart: Symptom Distribution</h2>
+      <canvas id="pieChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Health Tracker. All Rights Reserved.</p>
+  </footer>
+
+  <script src="charts.js"></script>
+</body>
+</html>

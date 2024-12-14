@@ -4,7 +4,8 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    background-color:green;
+    background-image: url("https://wallpaperaccess.com/full/3776356.jpg");
+    background-size: cover;
 }
 
 #bg-video {
