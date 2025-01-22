@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch symptoms data from local storage
     const symptomsData = [];
     for (let day = 1; day <= 30; day++) {
       const symptoms = localStorage.getItem(`symptoms-day-${day}`);
@@ -7,12 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         symptomsData.push({ day, symptoms });
       }
     }
-  
-    // Categorize symptoms into Good Health or Bad Health
+
     let goodHealthCount = 0;
     let badHealthCount = 0;
   
-    const symptomCategories = {}; // Track symptom counts for the pie chart
+    const symptomCategories = {}; 
     symptomsData.forEach((entry) => {
       const symptomsList = entry.symptoms.toLowerCase();
       if (
@@ -25,14 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
         goodHealthCount++;
       }
   
-      // Count each symptom
       symptomsList.split(",").forEach((symptom) => {
         const cleanSymptom = symptom.trim();
         symptomCategories[cleanSymptom] = (symptomCategories[cleanSymptom] || 0) + 1;
       });
     });
   
-    // Generate Bar Chart
     const barCtx = document.getElementById("barChart").getContext("2d");
     new Chart(barCtx, {
       type: "bar",
@@ -56,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   
-    // Generate Pie Chart
     const pieCtx = document.getElementById("pieChart").getContext("2d");
     new Chart(pieCtx, {
       type: "pie",

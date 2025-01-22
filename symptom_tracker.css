@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color:white;
+    background-image: url("https://mi-psych.com.au/wp-content/uploads/2016/07/Zz1CuD-1024x553.jpg");
+    background-size: contain;
 }
 
 #calendar {
@@ -59,3 +61,4 @@ body {
 .save-btn:hover {
     background-color: #ffa500;
 }
+

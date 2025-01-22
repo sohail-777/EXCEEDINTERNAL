@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+    color: #333;
+    text-align: center;
+    background-image: url("https://th.bing.com/th/id/R.7aaaa721ac5a0e2e55ca90d5c8c6941f?rik=gnt6RT%2bgmvEvIQ&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2016%2f03%2f29%2fbeautiful-nature-desktop-wallpaper_042321723_304.jpg&ehk=JYC9vE5FO5uED5i90FiQT5OqRYQqJzNOZXr5B7avfGE%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Header */
+  header {
+    background-color:none;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin: 40px auto;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #444;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
